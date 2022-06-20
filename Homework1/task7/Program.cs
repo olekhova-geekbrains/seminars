@@ -7,11 +7,11 @@
 
 Console.WriteLine("Введите трёхзначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-bool is_not_threedigit = num / 100 == 0 ^ Math.Abs(num / 100) > 10;
+bool isNotThreedigit = num / 100 == 0 || Math.Abs(num / 100) >= 10;
 
-if (is_not_threedigit)
+if (isNotThreedigit)
 {
   Console.WriteLine("Это не трёхзначное число!");
 }
-int last_number = Math.Abs(num % 10);
-Console.WriteLine($"Последняя цифра: {last_number}");
+int lastNumber = Math.Abs(num % 10);
+Console.WriteLine($"Последняя цифра: {lastNumber}");
