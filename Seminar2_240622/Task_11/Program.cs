@@ -7,9 +7,9 @@ Console.WriteLine($"Случайное число из отрезка 100 - 999 
 
 int RmSecDigit(int num)
 {
-  int firstGigit = num / 100;
+  int firstDigit = num / 100;
   int thirdDigit = num % 10;
-  int result = firstGigit * 10 + thirdDigit;
+  int result = firstDigit * 10 + thirdDigit;
   return result;
 }
 
