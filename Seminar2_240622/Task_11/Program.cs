@@ -2,9 +2,16 @@
 //  которая выводит случайное трёхзначное число и 
 //  удаляет вторую цифру этого числа. 456 -> 46 782 -> 72 918 -> 98 
 
-int rndNum = new Random().Next(10, 100);
-int rmSecDigit(int num)
+int rndNum = new Random().Next(100, 1000);
+Console.WriteLine($"Случайное число из отрезка 100 - 999 => {rndNum}");
+
+int RmSecDigit(int num)
 {
   int firstGigit = num / 100;
   int thirdDigit = num % 10;
+  int result = firstGigit * 10 + thirdDigit;
+  return result;
 }
+
+int res = RmSecDigit(rndNum);
+Console.WriteLine($"Удалили вторую цифру => {res}");
