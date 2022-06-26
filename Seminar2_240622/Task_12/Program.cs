@@ -4,14 +4,26 @@
 
 Console.WriteLine("Введите первое число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите первое число: ");
+Console.WriteLine("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-void IsMultiple(int a, int b)
+// вариант 1
+// void Multiple(int a, int b)
+// {
+//   int rem = a % b;
+//   if (rem == 0) Console.WriteLine("кратно");
+//   else Console.WriteLine($"не кратно, остаток {rem}");
+// }
+
+// Multiple(num1, num2);
+
+//вариант 2
+int Rem(int a, int b)
 {
   int rem = a % b;
-  if (rem == 0) Console.WriteLine("кратно");
-  else Console.WriteLine($"не кратно, остаток {rem}");
+  return rem;
 }
 
-IsMultiple(num1, num2);
+int remainder = Rem(num1, num2);
+string result = remainder == 0 ? "кратно" : $"не кратно, остаток {remainder}";
+Console.WriteLine(result);
