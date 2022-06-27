@@ -12,11 +12,11 @@ int number = Convert.ToInt32(Console.ReadLine());
 int SecondDigit(int num)
 {
   bool isNotThreeDigit = num / 100 == 0 || Math.Abs(num / 100) >= 10;
-  if (isNotThreeDigit) return 0;
+  if (isNotThreeDigit) return -1;
   int secondDigit = Math.Abs((num % 100) / 10);
   return secondDigit;
 }
 
 int secondDigit = SecondDigit(number);
-string result = secondDigit > 0 ? $"Вторая цифра числа {number}: {secondDigit}" : "Это не трёхзначное число";
+string result = secondDigit >= 0 ? $"Вторая цифра числа {number}: {secondDigit}" : "Это не трёхзначное число";
 Console.WriteLine(result);
