@@ -18,12 +18,23 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 // Multiple(num1, num2);
 
 //вариант 2
-int Rem(int a, int b)
+// int Rem(int a, int b)
+// {
+//   int rem = a % b;
+//   return rem;
+// }
+
+// int remainder = Rem(num1, num2);
+// string result = remainder == 0 ? "кратно" : $"не кратно, остаток {remainder}";
+// Console.WriteLine(result);
+
+
+//вариант 3
+string Rem(int a, int b)
 {
   int rem = a % b;
-  return rem;
+  string result = rem == 0 ? "кратно" : $"не кратно, остаток {rem}";
+  return result;
 }
 
-int remainder = Rem(num1, num2);
-string result = remainder == 0 ? "кратно" : $"не кратно, остаток {remainder}";
-Console.WriteLine(result);
+Console.WriteLine(Rem(num1, num2));
