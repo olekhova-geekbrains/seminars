@@ -4,7 +4,9 @@
 // 1 до N. 5 -> 1, 4, 9, 16, 25. 2 -> 1,4 12 мин 
 
 Console.WriteLine("Введите число: ");
-int n = int.Parse(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
+
+if (n <= 0) Console.WriteLine("Некорректный ввод");
 
 for (int i = 1; i <= n; i++)
 {
