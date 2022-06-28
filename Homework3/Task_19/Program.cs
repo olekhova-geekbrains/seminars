@@ -14,7 +14,7 @@ bool IsPalindrom(int num)
   int secondDigit = (num / 1000) % 10;
   int fourthDigit = (num / 10) % 10;
   int fifthDigit = num % 10;
-  if (fifthDigit == fifthDigit && secondDigit == fourthDigit) return true;
+  if (firstDigit == fifthDigit && secondDigit == fourthDigit) return true;
   return false;
 }
 
