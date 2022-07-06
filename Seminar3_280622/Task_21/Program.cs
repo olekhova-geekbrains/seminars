@@ -4,13 +4,13 @@
 // ними в 2D пространстве. 
 
 Console.Write("Введите координату x1: ");
-int x1 = int.Parse(Console.ReadLine());
+int x1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату y1: ");
-int y1 = int.Parse(Console.ReadLine());
+int y1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату x2: ");
-int x2 = int.Parse(Console.ReadLine());
+int x2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату y2: ");
-int y2 = int.Parse(Console.ReadLine());
+int y2 = Convert.ToInt32(Console.ReadLine());
 
 double Distance(int a1, int b1, int a2, int b2)
 {
