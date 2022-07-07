@@ -12,7 +12,7 @@ int[] CreateArrayRndInt(int size, int minElement, int maxElement)
   int index = 0;
   while (index < arr.Length)
   {
-    arr[index] = rnd.Next(minElement, maxElement);
+    arr[index] = rnd.Next(minElement, maxElement + 1);
     index++;
   }
   return arr;
@@ -37,8 +37,7 @@ int EvenNumbers(int[] arr)
   }
   return count;
 }
-
-int[] array = CreateArrayRndInt(6, 100, 1000);
+int[] array = CreateArrayRndInt(6, 100, 999);
 PrintArray(array);
 int evenNumbers = EvenNumbers(array);
 Console.WriteLine($"Количество четных элементов - {evenNumbers}");
