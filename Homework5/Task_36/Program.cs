@@ -12,7 +12,7 @@ int[] CreateArrayRndInt(int size, int minElement, int maxElement)
   int index = 0;
   while (index < arr.Length)
   {
-    arr[index] = rnd.Next(minElement, maxElement);
+    arr[index] = rnd.Next(minElement, maxElement + 1);
     index++;
   }
   return arr;
@@ -38,7 +38,7 @@ int SumOddIndex(int[] arr)
   return sum;
 }
 
-int[] array = CreateArrayRndInt(4, -99, 100);
+int[] array = CreateArrayRndInt(4, -99, 99);
 PrintArray(array);
 int sumOddIndex = SumOddIndex(array);
 Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях равна {sumOddIndex}");
