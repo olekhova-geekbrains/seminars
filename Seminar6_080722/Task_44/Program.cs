@@ -19,11 +19,11 @@ void PrintArray(int[] arr)
 
 int[] CreateFibonacci(int num)
 {
-  int[] fibon = new int[num]{0, 1};
-
-  for (int i = 2; i < fibon.Length; i++)
+  int[] fibon = new int[num];
+  for (int i = 0; i < num; i++)
   {
-    fibon[i] = fibon[i-1] + fibon[i-2];
+    if (i < 2) fibon[i] = i;
+    else fibon[i] = fibon[i - 1] + fibon[i - 2];
   }
   return fibon;
 }
