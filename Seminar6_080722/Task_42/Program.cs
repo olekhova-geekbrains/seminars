@@ -7,12 +7,12 @@
 Console.WriteLine("Ведите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-string res = "";
-while(number > 0)
-{
-  res = number % 2 + res;
-  number /= 2;
-}
+// string res = "";
+// while (number > 0)
+// {
+//   res = number % 2 + res;
+//   number /= 2;
+// }
 
 // string Reverse(string res)
 // {
@@ -26,4 +26,13 @@ while(number > 0)
 
 // string result = Reverse(res);
 // Console.WriteLine(result);
-Console.WriteLine(res);
+// Console.WriteLine(res);
+
+string ConvertDecToBin(int num)
+{
+  if (num == 0) return "";
+  return ConvertDecToBin(num / 2) + num % 2;
+}
+
+string result = ConvertDecToBin(number);
+Console.WriteLine(result);
