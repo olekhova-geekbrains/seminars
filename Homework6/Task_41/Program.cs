@@ -6,11 +6,15 @@
 Console.WriteLine("Сколько чисел будет введено с клавиатуры? ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int[] array = new int[number];
-for (int i = 0; i < number; i++)
+int[] CreateArray(int num)
 {
-  Console.WriteLine("Введите число: ");
-  array[i] = Convert.ToInt32(Console.ReadLine());
+  int[] arr = new int[num];
+  for (int i = 0; i < num; i++)
+  {
+    Console.WriteLine("Введите число: ");
+    arr[i] = Convert.ToInt32(Console.ReadLine());
+  }
+  return arr;
 }
 
 int PosNumbers(int[] arr)
@@ -18,10 +22,11 @@ int PosNumbers(int[] arr)
   int count = 0;
   for (int i = 0; i < arr.Length; i++)
   {
-    if(arr[i] > 0) count++;
+    if (arr[i] > 0) count++;
   }
   return count;
 }
 
+int[] array = CreateArray(number);
 int posNumbers = PosNumbers(array);
 Console.WriteLine($"Количество положительных чисел равно {posNumbers}");
