@@ -20,7 +20,7 @@ double[] FindIntersectionPoint(double kl1, double bl1, double kl2, double bl2)
   return new double[]{ xl, yl };
 }
 
-string result = "";
+string result = String.Empty;
 if (k1 == k2 && b1 == b2) result = "Прямые совпали - точки пересечения нет.";
 else if (k1 == k2) result = "Прямые параллельны - точки пересечения нет";
 else
