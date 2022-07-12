@@ -17,17 +17,17 @@ int maxElement = Convert.ToInt32(Console.ReadLine());
 
 int[,] CreateMatrixRndInt(int m, int n, int min, int max)
 {
-  int[,] array = new int[m, n];
+  int[,] arr = new int[m, n];
   var rnd = new Random();
 
-  for (int i = 0; i < array.GetLength(0); i++)
+  for (int i = 0; i < arr.GetLength(0); i++)
   {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int j = 0; j < arr.GetLength(1); j++)
     {
-      array[i, j] = rnd.Next(min, max + 1);
+      arr[i, j] = rnd.Next(min, max + 1);
     }
   }
-  return array;
+  return arr;
 }
 
 void PrintMatrix(int[,] arr)
