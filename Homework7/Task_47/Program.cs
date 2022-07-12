@@ -10,9 +10,9 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите минимальный элемент: ");
-int minElement = Convert.ToInt32(Console.ReadLine());
+double minElement = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите максимальный элемент: ");
-int maxElement = Convert.ToInt32(Console.ReadLine());
+double maxElement = Convert.ToDouble(Console.ReadLine());
 
 double[,] CreateMatrixRndDouble(int m, int n, double min, double max)
 {
