@@ -5,13 +5,13 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9-> (-0, 5; -0,5)
 
 Console.WriteLine("Введите k1: ");
-int k1 = Convert.ToInt32(Console.ReadLine());
+double k1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите b1: ");
-int b1 = Convert.ToInt32(Console.ReadLine());
+double b1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите k2: ");
-int k2 = Convert.ToInt32(Console.ReadLine());
+double k2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите b2: ");
-int b2 = Convert.ToInt32(Console.ReadLine());
+double b2 = Convert.ToDouble(Console.ReadLine());
 
 double[] FindIntersectionPoint(double kl1, double bl1, double kl2, double bl2)
 {
