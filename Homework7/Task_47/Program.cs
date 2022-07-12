@@ -6,9 +6,9 @@
 // 8 7,8 -7,1 9
 
 Console.WriteLine("Введите количество строк: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int numberOfRows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+int numberOfColumns = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите минимальный элемент: ");
 double minElement = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите максимальный элемент: ");
@@ -43,5 +43,5 @@ void PrintMatrix(double[,] arr)
   }
 }
 
-double[,] matrix = CreateMatrixRndDouble(num1, num2, minElement, maxElement);
+double[,] matrix = CreateMatrixRndDouble(numberOfRows, numberOfColumns, minElement, maxElement);
 PrintMatrix(matrix);
