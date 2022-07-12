@@ -16,17 +16,17 @@ double maxElement = Convert.ToDouble(Console.ReadLine());
 
 double[,] CreateMatrixRndDouble(int m, int n, double min, double max)
 {
-  double[,] array = new double[m, n];
+  double[,] arr = new double[m, n];
   var rnd = new Random();
 
-  for (int i = 0; i < array.GetLength(0); i++)
+  for (int i = 0; i < arr.GetLength(0); i++)
   {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int j = 0; j < arr.GetLength(1); j++)
     {
-      array[i, j] = Math.Round(rnd.NextDouble()*(max - min) + min, 2);
+      arr[i, j] = Math.Round(rnd.NextDouble()*(max - min) + min, 2);
     }
   }
-  return array;
+  return arr;
 }
 
 void PrintMatrix(double[,] arr)
