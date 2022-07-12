@@ -23,7 +23,7 @@ double[,] CreateMatrixRndDouble(int m, int n, double min, double max)
   {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-      array[i, j] = Math.Round(rnd.NextDouble()*(max - min) - min, 2);
+      array[i, j] = Math.Round(rnd.NextDouble()*(max - min) + min, 2);
     }
   }
   return array;
