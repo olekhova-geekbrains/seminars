@@ -58,3 +58,4 @@ PrintMatrix(matrix);
 Console.WriteLine();
 int sum = FindSumMainDiag(matrix);
 Console.WriteLine(sum);
+
