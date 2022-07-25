@@ -14,6 +14,7 @@ else NaturalNumbers(num);
 void NaturalNumbers(int n)
 {
   if (n == 0) return;
-  Console.Write($"{n} ");
+  if (n == 1) Console.WriteLine($"{n}");
+  else Console.Write($"{n}, ");
   NaturalNumbers(n - 1);
 }
