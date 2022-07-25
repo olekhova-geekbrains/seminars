@@ -10,9 +10,6 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число - количество чисел в последовательности: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-// string result = GetFibonacci(num1, num2, num);
-// Console.WriteLine(result);
-
 for (int i = 0; i < num; i++)
 {
   Console.Write($"{GetFibonacci(num1, num2, i)} ");
